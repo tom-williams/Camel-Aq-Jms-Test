@@ -1,0 +1,11 @@
+A sample application that uses an extended version of the routing-jms plugin with an Oracle AQ jms component.
+
+A simple, but non-trivial application
+ - camel route that takes a message off an oracle AQ queue
+ - transacts the route with a wired transaction policy
+ - deserializes using Camel's jaxb component
+ - persists a domain object to the same oracle schema using hibernate plugin
+ - persists another domain object to a mongo db using the mongo-db plugin
+
+Further explanation at:
+   http://www.kelvin-williams.dk/?p=16
